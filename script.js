@@ -54,7 +54,7 @@ const searchData = [
   { title: 'Redis 高可用架构解析', desc: '技术研究 / 架构', link: '#knowledge' },
   { title: '第一性原理分析法', desc: '思维方法 / 决策', link: '#knowledge' },
   { title: '用户体验地图绘制指南', desc: '产品思维 / 设计', link: '#knowledge' },
-  { title: '从「做完」到「做好」：工程质量的思维转变', desc: '心得 / 技术', link: '#insights' },
+  { title: '从「做完」到「做好」：工程质量的思维转变', desc: '心得 / 技术', link: 'article.html?id=example' },
   { title: '反脆弱：如何从不确定性中获益', desc: '心得 / 认知', link: '#insights' },
   { title: '数据驱动 vs 直觉驱动', desc: '心得 / 数据分析', link: '#insights' }
 ];
