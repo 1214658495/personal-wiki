@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人 Wiki — 知识·成长·思考</title>
+  <meta name="description" content="记录经验、沉淀心得、激励成长的个人知识库" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">⟨/⟩</span>
+        <span class="logo-text">My Wiki</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#knowledge" class="nav-link">知识库</a></li>
+        <li><a href="#insights" class="nav-link">心得</a></li>
+        <li><a href="#skills" class="nav-link">技能</a></li>
+        <li><a href="#timeline" class="nav-link">历程</a></li>
+        <li><a href="#goals" class="nav-link">目标</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🚀 持续学习中</div>
+        <h1 class="hero-title">
+          知识是<span class="gradient-text">最好的</span><br />复利投资
+        </h1>
+        <p class="hero-desc">
+          这是我的个人知识花园——记录经验沉淀、分析思维心得、追踪成长轨迹。<br />
+          每一篇记录，都是对未来自己的馈赠。
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-target="48">0</span>
+            <span class="stat-label">篇心得</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="12">0</span>
+            <span class="stat-label">个领域</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="365">0</span>
+            <span class="stat-label">天坚持</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#knowledge" class="btn btn-primary">探索知识库</a>
+          <a href="#insights" class="btn btn-ghost">最新心得 →</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-card">
+          <div class="avatar-ring"></div>
+          <div class="avatar-core">
+            <span class="avatar-emoji">🧠</span>
+          </div>
+          <div class="floating-tag tag-1">💡 思考</div>
+          <div class="floating-tag tag-2">📖 阅读</div>
+          <div class="floating-tag tag-3">🔧 实践</div>
+          <div class="floating-tag tag-4">🌱 成长</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KNOWLEDGE MAP ========== -->
+  <section class="section" id="knowledge">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">知识库</span>
+        <h2 class="section-title">我的知识地图</h2>
+        <p class="section-desc">按主题分类整理的知识体系，持续构建中</p>
+      </div>
+      <div class="knowledge-grid">
+        <div class="knowledge-card" data-category="tech">
+          <div class="kcard-icon">💻</div>
+          <h3 class="kcard-title">技术研究</h3>
+          <p class="kcard-desc">编程实践、架构设计、工程效率</p>
+          <div class="kcard-meta">
+            <span class="kcard-count">18 篇</span>
+            <span class="kcard-arrow">→</span>
+          </div>
+          <div class="kcard-tags">
+            <span class="tag">后端</span>
+            <span class="tag">架构</span>
+            <span class="tag">DevOps</span>
+          </div>
+        </div>
+        <div class="knowledge-card" data-category="thinking">
+          <div class="kcard-icon">🎯</div>
+          <h3 class="kcard-title">思维方法</h3>
+          <p class="kcard-desc">认知模型、决策框架、系统思考</p>
+          <div class="kcard-meta">
+            <span class="kcard-count">12 篇</span>
+            <span class="kcard-arrow">→</span>
+          </div>
+          <div class="kcard-tags">
+            <span class="tag">决策</span>
+            <span class="tag">逻辑</span>
+            <span class="tag">认知</span>
+          </div>
+        </div>
+        <div class="knowledge-card" data-category="product">
+          <div class="kcard-icon">📦</div>
+          <h3 class="kcard-title">产品思维</h3>
+          <p class="kcard-desc">用户研究、产品设计、数据分析</p>
+          <div class="kcard-meta">
+            <span class="kcard-count">9 篇</span>
+            <span class="kcard-arrow">→</span>
+          </div>
+          <div class="kcard-tags">
+            <span class="tag">用户</span>
+            <span class="tag">数据</span>
+            <span class="tag">设计</span>
+          </div>
+        </div>
+        <div class="knowledge-card" data-category="reading">
+          <div class="kcard-icon">📚</div>
+          <h3 class="kcard-title">读书笔记</h3>
+          <p class="kcard-desc">好书精华、知识提炼、批判性阅读</p>
+          <div class="kcard-meta">
+            <span class="kcard-count">15 篇</span>
+            <span class="kcard-arrow">→</span>
+          </div>
+          <div class="kcard-tags">
+            <span class="tag">商业</span>
+            <span class="tag">科技</span>
+            <span class="tag">哲学</span>
+          </div>
+        </div>
+        <div class="knowledge-card" data-category="career">
+          <div class="kcard-icon">🚀</div>
+          <h3 class="kcard-title">职业成长</h3>
+          <p class="kcard-desc">职场经验、领导力、个人品牌</p>
+          <div class="kcard-meta">
+            <span class="kcard-count">8 篇</span>
+            <span class="kcard-arrow">→</span>
+          </div>
+          <div class="kcard-tags">
+            <span class="tag">管理</span>
+            <span class="tag">沟通</span>
+            <span class="tag">效率</span>
+          </div>
+        </div>
+        <div class="knowledge-card card-add">
+          <div class="kcard-icon">✨</div>
+          <h3 class="kcard-title">持续扩展中</h3>
+          <p class="kcard-desc">新领域探索，新知识积累</p>
+          <div class="add-pulse"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSIGHTS ========== -->
+  <section class="section section-alt" id="insights">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">心得</span>
+        <h2 class="section-title">最新思考与分析</h2>
+        <p class="section-desc">沉淀下来的经验与洞见</p>
+      </div>
+      <div class="insights-grid">
+        <article class="insight-card insight-featured">
+          <div class="insight-header">
+            <span class="insight-cat cat-tech">技术</span>
+            <span class="insight-date">2026-04-28</span>
+          </div>
+          <h3 class="insight-title">从「做完」到「做好」：工程质量的思维转变</h3>
+          <p class="insight-excerpt">
+            很多人把完成任务当成终点，但真正的工程师文化是把「可维护性」和「可扩展性」当作基础标准。这篇文章分析了我在项目中观察到的典型质量陷阱，以及如何用系统性思维来避免……
+          </p>
+          <div class="insight-footer">
+            <div class="insight-tags">
+              <span class="itag">工程</span>
+              <span class="itag">质量</span>
+            </div>
+            <span class="read-time">⏱ 8 分钟</span>
+          </div>
+        </article>
+
+        <article class="insight-card">
+          <div class="insight-header">
+            <span class="insight-cat cat-think">思维</span>
+            <span class="insight-date">2026-04-15</span>
+          </div>
+          <h3 class="insight-title">第一性原理在日常决策中的应用</h3>
+          <p class="insight-excerpt">
+            把复杂问题分解到基本元素，重新构建解决方案——听起来简单，做起来需要刻意练习……
+          </p>
+          <div class="insight-footer">
+            <div class="insight-tags"><span class="itag">决策</span></div>
+            <span class="read-time">⏱ 5 分钟</span>
+          </div>
+        </article>
+
+        <article class="insight-card">
+          <div class="insight-header">
+            <span class="insight-cat cat-product">产品</span>
+            <span class="insight-date">2026-04-02</span>
+          </div>
+          <h3 class="insight-title">数据驱动 vs 直觉驱动：都需要，都不够</h3>
+          <p class="insight-excerpt">
+            数据告诉你「发生了什么」，直觉帮你推断「为什么」——两者结合才能做出真正好的产品决策……
+          </p>
+          <div class="insight-footer">
+            <div class="insight-tags"><span class="itag">数据</span><span class="itag">产品</span></div>
+            <span class="read-time">⏱ 6 分钟</span>
+          </div>
+        </article>
+
+        <article class="insight-card">
+          <div class="insight-header">
+            <span class="insight-cat cat-reading">读书</span>
+            <span class="insight-date">2026-03-20</span>
+          </div>
+          <h3 class="insight-title">《穷查理宝典》：多元思维模型框架</h3>
+          <p class="insight-excerpt">
+            查理·芒格的核心方法是建立跨学科思维格栅，避免「拿着锤子，看什么都是钉子」的认知偏误……
+          </p>
+          <div class="insight-footer">
+            <div class="insight-tags"><span class="itag">读书</span><span class="itag">认知</span></div>
+            <span class="read-time">⏱ 10 分钟</span>
+          </div>
+        </article>
+
+        <article class="insight-card">
+          <div class="insight-header">
+            <span class="insight-cat cat-career">职业</span>
+            <span class="insight-date">2026-03-10</span>
+          </div>
+          <h3 class="insight-title">向上管理的本质：让老板看到你创造的价值</h3>
+          <p class="insight-excerpt">
+            向上管理不是拍马屁，而是主动对齐目标、及时同步信息、让合作更顺畅的能力……
+          </p>
+          <div class="insight-footer">
+            <div class="insight-tags"><span class="itag">职场</span></div>
+            <span class="read-time">⏱ 7 分钟</span>
+          </div>
+        </article>
+      </div>
+      <div class="section-cta">
+        <button class="btn btn-outline" id="loadMoreBtn">加载更多心得</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">技能</span>
+        <h2 class="section-title">能力成长地图</h2>
+        <p class="section-desc">持续精进，客观评估自己的技能水平</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-bars">
+          <h3 class="skills-subtitle">核心技能</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">系统设计</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="85" style="--color: #7c3aed"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">后端开发</span>
+              <span class="skill-level">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="90" style="--color: #2563eb"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">产品思维</span>
+              <span class="skill-level">72%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="72" style="--color: #059669"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">数据分析</span>
+              <span class="skill-level">68%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="68" style="--color: #d97706"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">技术写作</span>
+              <span class="skill-level">78%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="78" style="--color: #db2777"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">团队协作</span>
+              <span class="skill-level">88%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="88" style="--color: #0891b2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-radar-wrap">
+          <h3 class="skills-subtitle">综合雷达图</h3>
+          <canvas id="radarChart" width="340" height="340"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <section class="section section-alt" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">历程</span>
+        <h2 class="section-title">成长时间线</h2>
+        <p class="section-desc">每一个里程碑，都是前进的动力</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2026</div>
+            <h3 class="tl-title">🚀 深入 AI 工程实践</h3>
+            <p class="tl-desc">系统学习大模型应用开发，主导 AI 产品落地项目，积累 RAG、Agent 实战经验。</p>
+            <div class="tl-tags"><span class="tag">AI</span><span class="tag">LLM</span><span class="tag">工程化</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2025</div>
+            <h3 class="tl-title">📈 技术 → 产品复合成长</h3>
+            <p class="tl-desc">开始系统学习产品设计方法论，尝试用数据驱动技术决策，向全栈思维转变。</p>
+            <div class="tl-tags"><span class="tag">产品</span><span class="tag">数据</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2024</div>
+            <h3 class="tl-title">🏗️ 深入系统设计</h3>
+            <p class="tl-desc">主导多个核心系统的架构设计，建立了对高可用、高并发系统的深度理解。</p>
+            <div class="tl-tags"><span class="tag">架构</span><span class="tag">分布式</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2023</div>
+            <h3 class="tl-title">🌱 建立知识管理体系</h3>
+            <p class="tl-desc">开始系统化记录学习笔记，搭建个人知识库，养成每日学习 + 输出的习惯。</p>
+            <div class="tl-tags"><span class="tag">习惯</span><span class="tag">写作</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GOALS ========== -->
+  <section class="section" id="goals">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">目标</span>
+        <h2 class="section-title">当前学习目标</h2>
+        <p class="section-desc">公开承诺，自我监督，持续迭代</p>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card">
+          <div class="goal-icon">📖</div>
+          <div class="goal-info">
+            <h3 class="goal-title">每月读完 2 本书</h3>
+            <p class="goal-sub">今年已读 8 本 / 目标 24 本</p>
+            <div class="goal-progress-track">
+              <div class="goal-progress-fill" data-width="33" style="--color: #7c3aed"></div>
+            </div>
+            <span class="goal-pct">33%</span>
+          </div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">✍️</div>
+          <div class="goal-info">
+            <h3 class="goal-title">每周输出 1 篇心得</h3>
+            <p class="goal-sub">今年已写 18 篇 / 目标 52 篇</p>
+            <div class="goal-progress-track">
+              <div class="goal-progress-fill" data-width="35" style="--color: #2563eb"></div>
+            </div>
+            <span class="goal-pct">35%</span>
+          </div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🎯</div>
+          <div class="goal-info">
+            <h3 class="goal-title">完成 AI 工程师认证</h3>
+            <p class="goal-sub">课程进度：进行中</p>
+            <div class="goal-progress-track">
+              <div class="goal-progress-fill" data-width="60" style="--color: #059669"></div>
+            </div>
+            <span class="goal-pct">60%</span>
+          </div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🏋️</div>
+          <div class="goal-info">
+            <h3 class="goal-title">坚持每日学习 1 小时</h3>
+            <p class="goal-sub">连续打卡 127 天</p>
+            <div class="goal-progress-track">
+              <div class="goal-progress-fill" data-width="85" style="--color: #d97706"></div>
+            </div>
+            <span class="goal-pct">127 天 🔥</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-quote">
+        <span class="quote-mark">"</span>
+        <p>种一棵树最好的时间是十年前，其次是现在。</p>
+        <span class="quote-mark">"</span>
+      </div>
+      <div class="footer-bottom">
+        <span>用 ❤️ 构建，持续更新中</span>
+        <span class="footer-dot">·</span>
+        <span id="footer-year"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
